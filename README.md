@@ -1,2 +1,2 @@
-# -amobasoftware-pruebafront
+# amobasoftware-pruebafront
 Prueba front end
