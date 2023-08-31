@@ -1,13 +1,25 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Root from "./routers/Root.jsx";
-import './styles/App.scss';
+import Layout from "./routers/Layout.jsx";
+import Facturacion from "./routers/Facturacion.jsx";
+import Proforma from "./routers/Proforma.jsx";
+import "./styles/App.scss";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root/>,
+    element: <Layout />,
+    children: [
+      {
+        path: "/facturacion",
+        element: <Facturacion />,
+      },
+      {
+        path: "/proforma",
+        element: <Proforma />,
+      },
+    ],
   },
 ]);
 

@@ -1,7 +1,19 @@
 @import "variables.scss";
 @import "layout.scss";
+@import "menuAcordeon.scss";
+@import "search.scss";
+@import "facturacion.scss";
+@import "generarFactura.scss";
+@import "factura.scss";
 
-body{
-    margin: 0px;
-    max-height: 100vh ;
+body {
+  margin: 0px;
+  max-height: 100vh;
+  font-family: $inter;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }

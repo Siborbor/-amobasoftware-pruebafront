@@ -1,0 +1,17 @@
+.bill-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px 0px;
+  .search-newclient{
+    display: flex;
+    gap: 50px;
+  }
+  h3{
+    color: $azul;
+    margin: 0px;
+  }
+  p{
+    font-weight: 500;
+  }
+}
