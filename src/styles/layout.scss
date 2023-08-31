@@ -1,0 +1,16 @@
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 30px 20px;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+    flex-grow: 1;
+    #sidebar {
+      background: linear-gradient(0deg, #f1f2f5, #f1f2f5);
+    }
+}
