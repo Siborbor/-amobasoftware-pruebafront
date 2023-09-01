@@ -1,12 +1,9 @@
 import React from "react";
 import Search from "../components/Search";
-
-const Factura = ({
-  factura = "0011000000014",
-  nombre = "Steven",
-  apellido = "Borbor",
-  correoElectronico = "steven@gmail.com",
-}) => {
+import { searchClientStore } from "../store/client";
+const Factura = ({ factura = "0011000000014" }) => {
+  
+  const oneClientData = searchClientStore(state => state.oneclientData);
   return (
     <section className="bill-container tarjeta">
       <h3>Factura N: {factura}</h3>
@@ -15,20 +12,21 @@ const Factura = ({
         <Search />
         <div className="newClient-client">
           <button> Agregar nuevo cliente</button>
-          <div className="contenedorDatoCliente">
-            <p>
-              <strong>Nombre: </strong>
-              {nombre}
-            </p>
-            <p>
-              <strong>Apellido: </strong>
-              {apellido}
-            </p>
-            <p>
-              <strong>Correo electronico: </strong>
-              {correoElectronico}
-            </p>
-          </div>
+          {oneClientData !== undefined ? (
+            <div className="contenedorDatoCliente">
+              <p>
+                <strong>Nombre:{oneClientData.name} </strong>
+              </p>
+              <p>
+                <strong>Apellido:{oneClientData.name} </strong>
+              </p>
+              <p>
+                <strong>Correo electronico:{oneClientData.email} </strong>
+              </p>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       </div>
     </section>
