@@ -6,7 +6,7 @@ function GenerarFactura() {
     <div className='generate-invoice'>
         <button> Generar Factura</button>
         <section>
-            <p>Detalles de Factura</p>
+            <h3>Detalles de Factura</h3>
             <div>
                 <p>Fecha:</p>
                 <p className='value-factura'></p>

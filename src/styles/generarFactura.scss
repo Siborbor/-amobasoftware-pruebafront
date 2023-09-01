@@ -3,4 +3,19 @@
   margin: 20px 0px;
   padding: 25px;
   border-radius: 8px;
+  button {
+    height: 44px;
+    width: 100%;
+    background-color: #ACBADC;
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    border: none;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  h3{
+    font-size: 18px;
+  }
 }

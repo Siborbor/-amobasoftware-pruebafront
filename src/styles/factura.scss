@@ -1,17 +1,55 @@
-.bill-container {
+.tarjeta {
   background-color: white;
   border-radius: 8px;
   padding: 20px;
   margin: 20px 0px;
-  .search-newclient{
+}
+.bill-container {
+  .search-newclient {
     display: flex;
     gap: 50px;
   }
-  h3{
+  h3 {
     color: $azul;
     margin: 0px;
   }
-  p{
-    font-weight: 500;
+  p {
+    font-weight: 900;
+  }
+  .search-newclient {
+    margin-top: 30px;
+    .search {
+      position: relative;
+      .label {
+        color: #6c727f;
+        font-size: 15px;
+        position: absolute;
+        top: -20px;
+      }
+    }
+    .newClient-client {
+      button {
+        height: 44px;
+        padding: 5px 21px;
+        background-color: $azul;
+        color: white;
+        border-radius: 8px;
+        font-size: 18px;
+        border: none;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .contenedorDatoCliente {
+        font-size: 13px;
+        color: #6c727f;
+        p {
+          font-weight: 500;
+          strong {
+            font-weight: 800;
+          }
+        }
+      }
+    }
   }
 }
