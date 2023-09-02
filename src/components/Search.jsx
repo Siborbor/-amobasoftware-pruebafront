@@ -17,7 +17,6 @@ const Search = () => {
     }
   };
 
-  /* HTML: <div class="loader"></div> */
 
   const handleChange = (e) => {
     setIdentificacion(e.target.value);

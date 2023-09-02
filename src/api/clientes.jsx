@@ -26,12 +26,12 @@ export const getOneCustomer = async (idCustomer) => {
       requestOptions
     );
     if (!response.ok) {
-      throw new Error("Error en la solicitud del perfil de usuario");
+      throw new Error("Error en la solicitud del obtener usuario");
     }
 
     return await response.json();
   } catch (error) {
-    console.error("Error en la solicitud del perfil de usuario:", error);
+    console.error("Error en la solicitud del obtener usuario:", error);
     throw error;
   }
 };
@@ -47,12 +47,12 @@ export const getProducts = async () => {
       requestOptions
     );
     if (!response.ok) {
-      throw new Error("Error en la solicitud del perfil de usuario");
+      throw new Error("Error en la solicitud del obtener producto");
     }
 
     return await response.json();
   } catch (error) {
-    console.error("Error en la solicitud del perfil de usuario:", error);
+    console.error("Error en la solicitud del obtener producto:", error);
     throw error;
   }
 };
