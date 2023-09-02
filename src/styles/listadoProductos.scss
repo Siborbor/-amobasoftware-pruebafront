@@ -1,0 +1,20 @@
+.listado-producto {
+    margin: 10px 0px 20px;
+    p{
+        margin: 5px 0px;
+        
+    }
+  .contenedor-title-product {
+    display: flex;
+  }
+  .contenedor-listProduct {
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
+    overflow-y: scroll;
+    
+    .contenedor-itemProduct {
+      display: flex;
+    }
+  }
+}

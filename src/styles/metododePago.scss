@@ -1,0 +1,51 @@
+.content-selectpago {
+    padding: 10px 30px;
+    p {
+      margin: 10px 0px;
+      font-weight: 700;
+      font-size: 13px;
+    }
+    h4{
+      color: $azul;
+    }
+  .contenedor-metodopago {
+    margin-bottom: 20px;
+    .contenedor-selectboton-metodopago {
+      display: flex;
+      position: relative;
+      gap: 25px;
+      height: 40px;
+      select,
+      input {
+        border-radius: 8px;
+        border: 1px solid #acbadc;
+        background-color: white;
+        padding-left: 15px;
+      }
+      select {
+        width: 100%;
+      }
+      input {
+        width: 15%;
+      }
+      button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -20px;
+        height: auto;
+        background-color: transparent;
+        padding: 0px;
+        width: auto;
+      }
+    }
+  }
+  .boton-agregarOtroPago{
+    height: auto !important;
+    padding: 0px !important;
+    background-color: transparent !important;
+    font-size: 15px !important;
+    color: $azul !important;
+    width: auto !important;
+  }
+}

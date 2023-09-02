@@ -11,7 +11,6 @@ import { useAuthStore, userProfileStore } from "../store/auth";
 const Layout = () => {
   const setToken = useAuthStore((state) => state.setToken);
   const setUserData = userProfileStore((state) => state.setUserData);
-  const userdata = userProfileStore.getState().userProfileData;
   
   useEffect(() => {
     (async () => {

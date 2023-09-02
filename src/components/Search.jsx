@@ -36,7 +36,7 @@ const Search = () => {
             type="text"
           />
           <div className="search-box-icon">
-            <button className="btn-icon-content" onClick={handleClick}>
+            <button className="btn-icon-content" onClick={handleClick} disabled={identificacion.length > 0 ? false : true}>
               {loading ? (
                 <div className="loader"></div>
               ) : (

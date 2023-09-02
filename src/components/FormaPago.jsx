@@ -1,6 +1,20 @@
-import React from "react";
+import { useState } from "react";
+import Modal from "./Modal";
+import SelectFormaPago from "./SelectFormaPago";
 
 const FormaPago = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const handleClick = () => {};
+
   return (
     <section className="cuerpo-factura tarjeta">
       <div className="title-cuerpoFactura">
@@ -10,8 +24,16 @@ const FormaPago = () => {
         </div>
       </div>
       <section className="contenedor-botones-newitemQr">
-        <button className="button-newitem">Add nuevo item a la factura</button>
+        <button className="button-newitem" onClick={openModal}>
+          Add nuevo item a la factura
+        </button>
       </section>
+      <Modal isOpen={isModalOpen} onClose={() => closeModal()}>
+        <SelectFormaPago/>
+        <button onClick={() => [handleClick(), closeModal()]}>
+          Agregar
+        </button>
+      </Modal>
     </section>
   );
 };

@@ -14,9 +14,39 @@
     }
     .contenedor-cantidad-precio {
       display: flex;
-      gap: 30px;
+      gap: 20px;
+      input{
+        width: 10px;
+      }
     }
   }
+
+  .descripcion-cuerpoFactura{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+    p{
+      margin: 0px;
+      font-size: 14px;
+      text-transform:capitalize;
+    }
+    .contenedor-cantidad-precio{
+      display: flex;
+      gap: 20px;
+      p{
+        margin: 0px;
+        
+      }
+      input{
+        width: 30px;
+        border:none;
+        border-bottom: 1px solid black;
+        text-align: center;
+      }
+    }
+  }
+
   .contenedor-botones-newitemQr {
     display: flex;
     gap: 19px;
