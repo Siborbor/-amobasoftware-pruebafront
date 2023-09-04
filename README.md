@@ -13,7 +13,7 @@ Configuración del Proyecto
 
 1.Clona este repositorio en tu máquina local usando el siguiente comando:
 
-git clone https://github.com/tuusuario/turepositorio.git
+git clone https://github.com/tuusuario/esterepositorio.git
 
 2.Navega hasta el directorio del proyecto:
 
